@@ -20,11 +20,39 @@ body {
     flex-wrap: wrap;
     width: 60%;
     height: 800px;
-    background-color: aliceblue;
     margin: 0 auto;
 }
 .boxCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 230px; 
     height: 380px;
     background-color: #2D3A46;
+}
+.boxImage {
+    width: 200px; 
+    height: 200px;
+}
+img {
+    width: 200px; 
+    height: 200px;
+}
+.boxText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    height: 130px;
+    text-align: center;
+}
+h3 {
+    color:white;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+p {
+    color: gray;
 }
