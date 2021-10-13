@@ -1,3 +1,8 @@
+<?php 
+        include __DIR__ .'/data/database.php';
+        
+    ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,26 +16,22 @@
     <title>PHP Dischi</title>
 </head>
 <body>
-    <?php 
-        include __DIR__ .'/partial/database.php';
-        include __DIR__ .'/partial/function.php';
-    ?>
     <header>
-        
+
     </header>
     <main>
         <div class="container">
             <div class="boxDischi">
                 <?php
-                foreach ($db as $key => $value)
+                foreach ($db as $disco)
                 echo '<div class="boxCard">
                     <div class="boxImage">
-                        <img src=" ' .$value["poster"] .'" alt="' .$value["title"] .'">
+                        <img src=" ' .$disco["poster"] .'" alt="' .$disco["title"] .'">
                     </div>
                     <div class="boxText">
-                        <h3>'.$value["title"] .'</h3>
-                        <p>'.$value["author"] .'</p>
-                        <p>'.$value["year"] .'</p>
+                        <h3>'.$disco["title"] .'</h3>
+                        <p>'.$disco["author"] .'</p>
+                        <p>'.$disco["year"] .'</p>
                     </div>
                 </div>';
                ?>

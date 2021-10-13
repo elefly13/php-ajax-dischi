@@ -18,8 +18,8 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    width: 60%;
-    height: 800px;
+    width: 55%;
+    
     margin: 0 auto;
 }
 .boxCard {
@@ -30,6 +30,7 @@ body {
     width: 230px; 
     height: 380px;
     background-color: #2D3A46;
+    margin: 10px 0px;
 }
 .boxImage {
     width: 200px; 
@@ -47,10 +48,12 @@ img {
     width: 200px;
     height: 130px;
     text-align: center;
+    
+
 }
 h3 {
     color:white;
-    font-weight: 900;
+    font-weight: 600;
     text-transform: uppercase;
 }
 p {
